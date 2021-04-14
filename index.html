@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>RichTextEditor</title>
 </head>
 <body>
         <h2>Rich Text Editor</h2>
-
+    <div class="editor">
         <nav>
-            <button onclick="">Bold</button>
+            <button onclick="bold()">Bold</button>
             <button onclick="">Italic</button>
             <button onclick="">Sublime</button>
             <button onclick="">Upper</button>
             <button onclick="">Lower</button>
             <button onclick="">OnlyFirstUpper</button>
-            <button onclick="">Color</button>
         </nav>
 
-        <input style="width: 50%; color: red;" type="text" name="" id="text">
+        <iframe name="textField" frameborder="1" id="output"></iframe>
+    </div> 
 
+        
 </body>
+    <script> 
+        textField.document.designMode = "On"
+    </script>
 </html>
